@@ -1,4 +1,5 @@
 # MLFLow Example
+Log and compare parameters, metrics, models, and artifacts from different runs.
 
 ## Install UV
 UV is a dependency manager, it is used to install 3rd party tools like mlflow, like pip or conda.
