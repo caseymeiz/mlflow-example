@@ -17,7 +17,7 @@ def main():
     config = Config(lr=args.lr)
     mlflow.set_tracking_uri("sqlite:///mlruns.db")
     mlflow.set_experiment("Classifier")
-    with mlflow.start_run(run_name="MLP"):
+    with mlflow.start_run(run_name=f"MLP lr={args.lr}"):
         X, y= create_data(config)
         fig = plot(X, y)
         save_fig(fig, "ground_truth.png")
