@@ -29,5 +29,17 @@ Execute this on you local machine
 ssh -N -L 8080:localhost:8080 server.address.edu
 ```
 
+## Open the Dashboard
+In your web browser open 
+```
+localhost:8080
+```
 
+## MLFlow organizes and visualizes your experiments
+We can compare the different runs, with the different learning rates.
 
+![Runs](runs.png)
+
+## MLFlow manages your artifacts
+
+![Runs](artifacts.png)
