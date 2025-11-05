@@ -8,9 +8,13 @@ import torch
 from torch import nn
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
+import argparse
 
 def main():
-    config = Config(lr=0.01)
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--lr', type=float, default=0.001)
+    args = parser.parse_args()
+    config = Config(lr=args.lr)
     mlflow.set_tracking_uri("sqlite:///mlruns.db")
     mlflow.set_experiment("Classifier")
     with mlflow.start_run(run_name="MLP"):
