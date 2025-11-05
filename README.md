@@ -23,7 +23,7 @@ Choose your own port, on a shared server this can be an issue
 .venv/bin/mlflow ui -p 8080 --backend-store-uri sqlite:///mlruns.db
 ```
 
-## If you need to tunnle into the server
+## If you need to tunnel into the server
 Execute this on you local machine
 ```bash
 ssh -N -L 8080:localhost:8080 server.address.edu
