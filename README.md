@@ -39,7 +39,7 @@ localhost:8080
 ## MLFlow organizes and visualizes your experiments
 We can compare the different runs, with the different learning rates.
 
-![Runs](runs.png)
+![Runs](params_charts.png)
 
 ## MLFlow manages your artifacts
 
